@@ -7,6 +7,25 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2023-11-22T17:04:16.549895134Z"
+    dependencies:
+    - condition: global.prometheus.enabled
+      name: prometheus
+      repository: file://./dependencies/prometheus
+      version: ~11.0.2
+    description: A Helm chart that sets up the Kubecost Cloud agent with Prometheus
+      to monitor Kubernetes costs.
+    digest: 81be9919664e2a3948d9adf2e2a32e99327e997f18269b8ad90faf9c3a14c08a
+    name: kubecost-cloud-agent
+    urls:
+    - https://github.com/chipzoller/kubecost-cloud-agent/releases/download/kubecost-cloud-agent-1.0.3/kubecost-cloud-agent-1.0.3.tgz
+    version: 1.0.3
+  - annotations:
+      artifacthub.io/links: |
+        - name: Homepage
+          url: https://www.kubecost.com
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2023-11-22T14:49:06.924397455Z"
     dependencies:
     - condition: global.prometheus.enabled
@@ -58,4 +77,4 @@ entries:
     urls:
     - https://github.com/chipzoller/kubecost-cloud-agent/releases/download/kubecost-cloud-agent-1.0.0/kubecost-cloud-agent-1.0.0.tgz
     version: 1.0.0
-generated: "2023-11-22T14:49:06.924410399Z"
+generated: "2023-11-22T17:04:16.549910112Z"
